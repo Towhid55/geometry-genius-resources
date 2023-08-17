@@ -42,3 +42,27 @@ function calculateRectangleArea(){
     const areaSpan = document.getElementById("rectangle-area");
     areaSpan.innerText = area;
 }
+
+
+// reusable function --> reduce duplicate code
+function calculateParallelogramArea(){
+    const base = getInputValue("parallelogram-base");
+    console.log(base);
+
+    const height = getInputValue("parallelogram-height");
+    console.log(height)
+
+    const area = base * height;
+    console.log(area);
+
+    const areaSpan = document.getElementById("parallelogram-area");
+    areaSpan.innerText = area;
+}
+
+// reusable get input value field in number
+function getInputValue(fieldId){
+    const inputField = document.getElementById(fieldId);
+    const inputValueText = inputField.value;
+    const value = parseFloat(inputValueText);
+    return value;
+}
