@@ -26,10 +26,10 @@
                       <h2 class="card-title">Triangle</h2>
                       <p>Area (A) = 0.5 X b X h</p>
                       <p>
-                        <input type="text" class="border bg-gray-200 text-xl w-20 px-2" placeholder="base" id="triangle-base">
+                        <input type="number" class="border bg-gray-200 text-xl w-20 px-2" placeholder="base" id="triangle-base">
                         <span class="ml-2">cm</span>
                         <!-- Triangle  height-->
-                        <input type="text" class="border bg-gray-200 text-xl w-20 px-2 ml-2" placeholder="height" id="triangle-height">
+                        <input type="number" class="border bg-gray-200 text-xl w-20 px-2 ml-2" placeholder="height" id="triangle-height">
                         <span class="ml-2">cm</span>
                       </p>
                       <p>Area: <span id="triangle-area">0</span> cm<sup>2</sup></p>
@@ -87,10 +87,10 @@
                       <h2 class="card-title">Ellipse</h2>
                       <p>Area (A) = πab</p>
                       <p>
-                        <input type="text" class="border bg-gray-200 text-xl w-20 px-2" placeholder="large" id="ellipse-major-radius">
+                        <input type="number" class="border bg-gray-200 text-xl w-20 px-2" placeholder="large" id="ellipse-major-radius">
                         <span class="ml-2">cm</span>
                         <!-- ellipse  height-->
-                        <input type="text" class="border bg-gray-200 text-xl w-20 px-2 ml-2" placeholder="short" id="ellipse-minor-radius">
+                        <input type="number" class="border bg-gray-200 text-xl w-20 px-2 ml-2" placeholder="short" id="ellipse-minor-radius">
                         <span class="ml-2">cm</span>
                       </p>
                       <p>Area: <span id="ellipse-area">0</span> cm<sup>2</sup></p>
@@ -139,6 +139,7 @@
             <!-- area calculator -->
             <div class="w-[350px]">
                 <div class="text-4xl">Area Calculator</div>
+                <div id="calculation-entry"></div>
             </div>
 
 
